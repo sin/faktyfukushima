@@ -1,0 +1,239 @@
+@import url(https://fonts.googleapis.com/css?family=Catamaran:400,700&subset=latin,latin-ext);
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Catamaran', sans-serif;
+  line-height: 1.42857143;
+  color: #333;
+}
+
+h1, h2 {
+  font-family: inherit;
+  line-height: 1.1
+}
+
+p {
+  margin: 0 0 20px;
+  font-size: 18px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  max-width: 970px;
+}
+
+@media(max-width: 1090px) {
+  .wrapper {
+    margin: 0 5.5%;
+  }
+}
+
+@media(max-width: 750px) {
+  .wrapper {
+    margin: 0 auto;
+    max-width: 670px;
+  }
+}
+
+.logo {
+  padding: 18px;
+}
+
+.logo img:hover {
+  opacity: 0.7;
+}
+
+.title {
+  border-top: #ffaaaa solid 2px;
+}
+
+.title h1 {
+  display: none;
+}
+
+.title img {
+  width: 100%;
+}
+
+.info {
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 26px;
+  font-weight: 700;
+  padding-top: 20px;
+}
+
+.info-main h2 {
+  font-weight: 400;
+  padding-bottom: 35px;
+}
+
+.info-main h2:before,
+.info-ncbj h2:before,
+.info-instruction h2:before,
+.info-instruction h2:after {
+  content: '▼';
+  color: #ff0000;
+  margin: 12px;
+}
+
+.info-main h2:before,
+.info-ncbj h2:before {
+  content: '●';
+  font-size: 36px;
+}
+
+.info-share h2 {
+  font-weight: 400;
+}
+
+.info-ncbj {
+  padding: 0 10px;
+  text-align: left;
+}
+
+.info-buttons {
+  padding-bottom: 35px;
+}
+
+.info-buttons .button {
+  display: inline-block;
+  width: 350px;
+  margin: 10px 20px;
+}
+
+.questions h3 {
+  padding: 14px 0px 10px 10px;
+  margin: 30px 0 0;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.element {
+  padding: 0 15px;
+  position: relative;
+}
+
+.element:after {
+  content: '▼';
+  position: absolute;
+  top: 12px;
+  right: 30px;
+  font-size: 26px;
+}
+
+.element:nth-child(even) {
+  background: #ffffff;
+}
+
+.element:nth-child(odd) {
+  background: #dcdfe2;
+}
+
+.element:nth-child(even):after {
+  color: #dadada;
+}
+
+.element:nth-child(odd):after {
+  color: #ffffff;
+}
+
+.question {
+  display: block;
+  padding: 15px 100px 15px 5px;
+  color: #333333;
+  font-size: 20px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.answer {
+  transition: all 0.5s ease-out;
+  opacity: 0; 
+  overflow: hidden;
+}
+
+.active .answer {
+  opacity: 1;
+}
+
+.footnotes {
+  border-top: #666666 solid 1px;
+  margin-top: 10px;
+  padding: 10px 0;
+  width: 80%;
+}
+
+.footnotes p {
+  margin-bottom: 0;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.footnotes a {
+  color: #337ab7;
+  text-decoration: none;
+}
+
+.footnotes a:hover,
+.footnotes a:focus {
+  outline: none;
+  color: #23527c;
+}
+
+.info-share,
+.info-fanpage,
+.info-ncbj {
+  border-top: #999999 solid 1px;
+  margin-top: 35px;
+}
+
+.info-main,
+.questions h3 {
+  border-bottom: #ffaaaa solid 2px;
+}
+
+.button {
+  display: inline-block;
+  width: 500px;
+  margin: 10px auto;
+  padding: 15px 10px;
+  background: #939598;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media(max-width: 550px) {
+  .button {
+    width: 350px;
+  }
+}
+
+.button:hover {
+  opacity : 0.7;
+}
+
+.button-fanpage {
+  background: #ff0000;
+}
+
+.button-share {
+  background: #004286;
+}
+
+.button-visit {
+  padding: 10px;
+  font-size: 18px;
+}
