@@ -12,6 +12,11 @@ body {
   color: #333;
 }
 
+::selection {
+  color: #ffffff;
+  background: #ff0000;
+}
+
 h1, h2 {
   font-family: inherit;
   line-height: 1.1
@@ -122,28 +127,12 @@ p {
   position: relative;
 }
 
-.element:after {
-  content: '▼';
-  position: absolute;
-  top: 12px;
-  right: 30px;
-  font-size: 26px;
-}
-
 .element:nth-child(even) {
   background: #ffffff;
 }
 
 .element:nth-child(odd) {
   background: #dcdfe2;
-}
-
-.element:nth-child(even):after {
-  color: #dadada;
-}
-
-.element:nth-child(odd):after {
-  color: #ffffff;
 }
 
 .question {
@@ -155,9 +144,26 @@ p {
   text-decoration: none;
 }
 
+.question:after {
+  content: '▼';
+  position: absolute;
+
+  top: 12px;
+  right: 30px;
+  font-size: 26px;
+}
+
+.element:nth-child(even) .question:after {
+  color: #dadada;
+}
+
+.element:nth-child(odd) .question:after {
+  color: #ffffff;
+}
+
 .answer {
   transition: all 0.5s ease-out;
-  opacity: 0; 
+  opacity: 0;
   overflow: hidden;
 }
 
@@ -236,4 +242,8 @@ p {
 .button-visit {
   padding: 10px;
   font-size: 18px;
+}
+
+.underline {
+  text-decoration: underline;
 }
